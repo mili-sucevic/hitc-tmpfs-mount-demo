@@ -3,7 +3,7 @@ from PIL import Image
 import os
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = '/uploads'
+app.config['UPLOAD_FOLDER'] = '/app/uploads'
 app.config['THUMBNAIL_FOLDER'] = '/tmp/cache'  # Using tmpfs for temporary storage
 
 # Ensure the UPLOAD_FOLDER and THUMBNAIL_FOLDER exist
